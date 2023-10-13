@@ -1,2 +1,4 @@
-FROM kasmweb/alpine-318-desktop:1.14.0
-EXPOSE 6901
+FROM ghcr.io/linuxserver/baseimage-kasmvnc:alpine318
+RUN apk add --no-cache firefox
+COPY /root /
+EXPOSE 3001
